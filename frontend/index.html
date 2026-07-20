@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8" />
-    <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.1/dist/autoload.js"></script>
+     
     <link rel="icon" type="image/svg+xml" href="/cloudpaste.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="CloudPaste - 安全分享您的内容，支持 Markdown 编辑和文件上传" />
@@ -17,6 +17,13 @@
         // 使用document.write确保config.js在main.js之前同步加载
         document.write('<script src="/config.js?t=' + new Date().getTime() + '"><\/script>');
     </script>
+  <script>
+window.initWidget = {
+    cdnPath: "https://cdn.jsdelivr.net/gh/WhenCoding/live2d_models@main/model/",
+
+};
+</script>
+<script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.1/dist/autoload.js"></script> 
 </head>
 <body>
 <!-- SVG图标定义 -->
